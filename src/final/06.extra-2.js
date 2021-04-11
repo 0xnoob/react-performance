@@ -110,7 +110,6 @@ function Cell({row, column}) {
   const cell = state.grid[row][column]
   return <CellImpl cell={cell} row={row} column={column} />
 }
-Cell = React.memo(Cell)
 
 function CellImpl({cell, row, column}) {
   const dispatch = useAppDispatch()
